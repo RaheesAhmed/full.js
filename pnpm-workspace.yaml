@@ -1,0 +1,15 @@
+packages:
+  # Core packages
+  - "packages/*"
+  # Framework features
+  - "features/*"
+  # CLI and tooling
+  - "tools/*"
+  # Example applications
+  - "examples/*"
+  # Documentation website
+  - "docs"
+  # Development tooling
+  - "tooling/*"
+  # Testing utilities
+  - "testing/*"
