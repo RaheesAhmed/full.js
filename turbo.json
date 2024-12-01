@@ -6,6 +6,21 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
+    "build:prod": {
+      "dependsOn": ["^build:prod"],
+      "outputs": ["dist/**"],
+      "env": ["NODE_ENV=production"]
+    },
+    "build:analyze": {
+      "dependsOn": ["^build:analyze"],
+      "outputs": ["dist/**", ".analyze/**"]
+    },
+    "build:watch": {
+      "dependsOn": ["^build:watch"],
+      "outputs": ["dist/**"],
+      "cache": false,
+      "persistent": true
+    },
     "test": {
       "dependsOn": ["^build"],
       "outputs": ["coverage/**"],
